@@ -28,7 +28,7 @@
             <td><a href="/?author_id=<?php echo $book->author->id?>"><?php echo $book->author->fullname;?></a></td>
             <td><a href="/?category_id=<?php echo $book->category->id?>"><?php echo $book->category->category_name;?></a></td>
             <td><?php echo $book->description;?></td>
-            <td><img src="<?php echo $book->image; ?>" alt=""></td>
+            <td><img src="<?php echo $book->image; ?>" height="200"></td>
         </tr>
 
         <?php

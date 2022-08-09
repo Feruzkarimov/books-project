@@ -12,7 +12,7 @@ class QueryBuilder
     function selectAll(string $type, $column = null, $value = null) {
 
         $table = $type::$_table;
-        $sql = "SELECT * FROM `exampleDB` . `${table}`";
+        $sql = "SELECT * FROM `${table}`";
         
         if ($column != null) {
             $sql .= " WHERE ${column} = ${value}";
@@ -33,7 +33,7 @@ class QueryBuilder
 
         $table = $type::$_table;
 
-        $statement = $this->pdo->prepare("SELECT * FROM `exampleDB` . `${table}` WHERE ${column} = ?");
+        $statement = $this->pdo->prepare("SELECT * FROM `${table}` WHERE ${column} = ?");
 
         $statement->execute([$value]);
 

@@ -2,9 +2,9 @@
 
 return [
     'database' => [
-        'name' => 'exampleDB',
+        'name' => 'database_name',
         'username' => 'root',
-        'password' => '1111',
+        'password' => '',
         'connection' => '127.0.0.1',
         'options' => [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING

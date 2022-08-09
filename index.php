@@ -37,6 +37,5 @@ foreach ($books as $i => $book) {
     $books[$i] = $book;
 }
 
-// dd($books);
 require 'books.view.php';
 ?>

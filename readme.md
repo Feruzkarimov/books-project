@@ -1,0 +1,3 @@
+Sqldump
+Config
+Run server
